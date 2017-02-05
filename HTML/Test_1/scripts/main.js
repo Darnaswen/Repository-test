@@ -16,11 +16,11 @@ myButton.onclick = function() {
 function setUserName() {
   var myName = prompt('Please enter your name.');
   localStorage.setItem('name', myName);
-  myHeading.innerHTML  = 'Tremble Mortal ' + myName;
+  myHeading.innerHTML  = 'Hello ' + myName;
 }
 if(!localStorage.getItem('name')) {
   setUserName();
 } else {
   var storedName = localStorage.getItem('name');
-  myHeading.innerHTML  = 'Tremble Mortal ' + storedName;
+  myHeading.innerHTML  = 'Hello ' + storedName;
 }
